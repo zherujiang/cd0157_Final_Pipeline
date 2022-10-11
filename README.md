@@ -21,7 +21,6 @@ The steps you will follow are:
 1. **Create an EKS Cluster, IAM Role for CodeBuild, and Authenticate the CodeBuild**<br>
 You will start with creating an EKS cluster in your preferred region, using `eksctl` command. Then, you will create an IAM role that the Codebuild will assume to access your k8s/EKS cluster. This IAM role will have the necessary access permissions (attached JSON policies), and you will also have to add this role to the k8s cluster's configMap. <br><br>
 
-
 2. **Deployment to Kubernetes using CodePipeline and CodeBuild**
  - **Generate a Github access token**<br>Next, you will generate an access-token from your Github account so that whichever service has that token can access the repositories from your Github account. You will share this token with the AWS Codebuild service (programmatically) so that it can build and test your code. <br><br>
  
